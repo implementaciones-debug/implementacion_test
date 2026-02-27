@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #0B0F1A;
+    --background-secondary: #111827;
+    --primary: #3B82F6;
+    --accent: #7C3AED;
+    --text-secondary: #9CA3AF;
+    --border: #1F2937;
+    --white: #F9FAFB;
+  }
+
+  * {
+    @apply box-border;
+  }
+
+  body {
+    @apply bg-[#0B0F1A] text-[#F9FAFB];
+    font-family: 'Inter', sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-[#3B82F6] to-[#7C3AED] bg-clip-text text-transparent;
+  }
+
+  .gradient-bg {
+    background: linear-gradient(135deg, #3B82F6 0%, #7C3AED 100%);
+  }
+
+  .glass-effect {
+    @apply bg-white/5 backdrop-blur-md border border-[#1F2937];
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:scale-[1.02] hover:shadow-xl;
+  }
+
+  .btn-primary {
+    @apply bg-[#3B82F6] text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:bg-gradient-to-r hover:from-[#3B82F6] hover:to-[#7C3AED] hover:shadow-lg hover:shadow-[#3B82F6]/20;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent text-[#3B82F6] border border-[#3B82F6] px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:bg-[#3B82F6]/10;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
