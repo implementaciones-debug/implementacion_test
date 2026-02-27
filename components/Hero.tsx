@@ -78,7 +78,7 @@ const Hero = () => {
             className="mb-8"
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold gradient-text mb-2">
-              NEXORA SYSTEMS
+              AÚN NO SABEMOS SYSTEMS
             </h1>
             <p className="text-[#9CA3AF] text-lg sm:text-xl">
               Intelligent Business Architecture
@@ -102,7 +102,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-lg sm:text-xl text-[#9CA3AF] mb-8 max-w-4xl mx-auto leading-relaxed"
           >
-            En NEXORA SYSTEMS diseñamos ecosistemas tecnológicos automatizados que reducen costos operativos, eliminan tareas manuales innecesarias y preparan tu empresa para escalar sin fricción.
+            En AÚN NO SABEMOS SYSTEMS diseñamos ecosistemas tecnológicos automatizados que reducen costos operativos, eliminan tareas manuales innecesarias y preparan tu empresa para escalar sin fricción.
           </motion.p>
 
           {/* Authority Text */}
